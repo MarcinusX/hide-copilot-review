@@ -30,6 +30,10 @@ GitHub has no setting to remove Copilot from the reviewer suggestions. Turning o
 - If someone else requests a Copilot review on a PR, Copilot's row in the Reviewers sidebar is hidden too.
 - The selectors target GitHub's current markup (the `copilot-pull-request-reviewer` app link and Copilot's user id `175728472`). If GitHub changes the page and Copilot reappears, update `extension/hide-copilot.css`.
 
+## Privacy
+
+The extension collects no data. It only injects a stylesheet on github.com: no JavaScript, no permissions, no network requests.
+
 ## License
 
 [MIT](LICENSE). Not affiliated with or endorsed by GitHub. "GitHub" and "Copilot" are trademarks of GitHub, Inc.
