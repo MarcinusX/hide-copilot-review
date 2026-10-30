@@ -2,4 +2,29 @@
 
 # hide-copilot-review
 
-Created in [T3 Code](https://t3.codes).
+A Chrome extension that hides the **Copilot** reviewer suggestion on GitHub pull requests, so you can't request a Copilot review by accident.
+
+It hides:
+
+- the `Copilot · Balanced ▾ · Request` row in the PR **Reviewers** sidebar
+- the same row on the **Open a pull request** (compare) page
+- the Copilot entry (and the then-empty "Suggestions" heading) in the reviewers gear dropdown
+
+It's a single CSS file injected on `https://github.com/*`. No JavaScript, no permissions, no network access.
+
+## Install
+
+1. Open `chrome://extensions`.
+2. Turn on **Developer mode** (top right).
+3. Click **Load unpacked** and select the `extension/` folder of this repo.
+
+Chrome keeps the extension loaded across restarts. After pulling changes, click the reload icon on the extension card.
+
+## Why an extension?
+
+GitHub has no setting to remove Copilot from the reviewer suggestions. Turning off "Copilot code review" in your Copilot settings only stops automatic reviews.
+
+## Notes
+
+- If someone else requests a Copilot review on a PR, Copilot's row in the Reviewers sidebar is hidden too.
+- The selectors target GitHub's current markup (the `copilot-pull-request-reviewer` app link and Copilot's user id `175728472`). If GitHub changes the page and Copilot reappears, update `extension/hide-copilot.css`.
