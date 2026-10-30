@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Copilot Review",
+  "version": "0.1.0",
+  "description": "Hides the Copilot reviewer suggestion on GitHub pull requests.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
