@@ -1,0 +1,20 @@
+/* Hide Copilot from the "Reviewers" sidebar on GitHub pull requests and on
+   the "Open a pull request" (compare) page.
+
+   Copilot's reviewer is the GitHub app "copilot-pull-request-reviewer",
+   user id 175728472. */
+
+/* Sidebar row: "Copilot  Balanced ▾  Request" */
+.js-issue-sidebar-form div:has(> span a[href="/apps/copilot-pull-request-reviewer"]),
+button.js-suggested-reviewer[value="175728472"],
+[data-copilot-review-effort-picker],
+
+/* Gear dropdown entry under "Suggestions". Every entry contains a
+   .js-copilot-avatar; it is only un-hidden on Copilot's own entry. */
+.select-menu-item:has(input[value="175728472"]),
+.select-menu-item:has(.js-copilot-avatar:not([hidden])),
+
+/* "Suggestions" divider when Copilot was its only entry */
+.js-divider-suggestions:has(+ .select-menu-item input[value="175728472"]):not(:has(+ * + .select-menu-item)) {
+  display: none !important;
+}

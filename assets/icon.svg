@@ -1,4 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#059669"/>
-  <text x="32" y="32" dy="0.35em" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff">HC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <circle cx="64" cy="64" r="56" fill="#ffffff"/>
+  <!-- head with ear pieces -->
+  <rect x="14" y="56" width="14" height="24" rx="6" fill="#1f2328"/>
+  <rect x="100" y="56" width="14" height="24" rx="6" fill="#1f2328"/>
+  <rect x="22" y="36" width="84" height="58" rx="24" fill="#1f2328"/>
+  <!-- goggles -->
+  <rect x="31" y="45" width="30" height="24" rx="10" fill="#ffffff"/>
+  <rect x="67" y="45" width="30" height="24" rx="10" fill="#ffffff"/>
+  <!-- no-entry sign -->
+  <line x1="24.4" y1="24.4" x2="103.6" y2="103.6" stroke="#ffffff" stroke-width="18"/>
+  <line x1="24.4" y1="24.4" x2="103.6" y2="103.6" stroke="#d1242f" stroke-width="11"/>
+  <circle cx="64" cy="64" r="56" fill="none" stroke="#d1242f" stroke-width="11"/>
 </svg>
