@@ -1,6 +1,6 @@
-<img src="assets/icon.svg" width="64" height="64" alt="">
-
 # hide-copilot-review
+
+<img src="store/promo-small-440x280.png" width="440" alt="Hide Copilot Review: no more accidental Copilot review requests on GitHub PRs">
 
 A Chrome extension that hides the **Copilot** reviewer suggestion on GitHub pull requests, so you can't request a Copilot review by accident.
 
