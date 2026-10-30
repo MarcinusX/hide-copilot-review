@@ -14,11 +14,12 @@ It's a single CSS file injected on `https://github.com/*`. No JavaScript, no per
 
 ## Install
 
-1. Open `chrome://extensions`.
-2. Turn on **Developer mode** (top right).
-3. Click **Load unpacked** and select the `extension/` folder of this repo.
+1. Download this repo (**Code → Download ZIP**, then unzip) or `git clone` it.
+2. Open `chrome://extensions`.
+3. Turn on **Developer mode** (top right).
+4. Click **Load unpacked** and select the `extension/` folder of this repo.
 
-Chrome keeps the extension loaded across restarts. After pulling changes, click the reload icon on the extension card.
+Chrome keeps the extension loaded across restarts. After updating the files, click the reload icon on the extension card.
 
 ## Why an extension?
 
@@ -28,3 +29,7 @@ GitHub has no setting to remove Copilot from the reviewer suggestions. Turning o
 
 - If someone else requests a Copilot review on a PR, Copilot's row in the Reviewers sidebar is hidden too.
 - The selectors target GitHub's current markup (the `copilot-pull-request-reviewer` app link and Copilot's user id `175728472`). If GitHub changes the page and Copilot reappears, update `extension/hide-copilot.css`.
+
+## License
+
+[MIT](LICENSE). Not affiliated with or endorsed by GitHub. "GitHub" and "Copilot" are trademarks of GitHub, Inc.
