@@ -9,9 +9,10 @@
 button.js-suggested-reviewer[value="175728472"],
 [data-copilot-review-effort-picker],
 
-/* Gear dropdown entry under "Suggestions" */
+/* Gear dropdown entry under "Suggestions". Every entry contains a
+   .js-copilot-avatar; it is only un-hidden on Copilot's own entry. */
 .select-menu-item:has(input[value="175728472"]),
-.select-menu-item:has(.js-copilot-avatar),
+.select-menu-item:has(.js-copilot-avatar:not([hidden])),
 
 /* "Suggestions" divider when Copilot was its only entry */
 .js-divider-suggestions:has(+ .select-menu-item input[value="175728472"]):not(:has(+ * + .select-menu-item)) {
